@@ -1,0 +1,19 @@
+# Candy Love
+
+t=int(input())
+lst=[]
+lst1=[]
+sum=0
+for i in range(t):
+    x=int(input())
+    lst=list(map(int,input().split()))
+    for i in lst:
+        sum=sum+i
+    for i in range(1,sum):
+        if i+(i+1)==sum :
+            lst1.append("YES")
+            break
+    else:
+        lst1.append("NO")
+for i in lst1:
+    print(i)
